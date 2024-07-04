@@ -6,33 +6,41 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "VictorMono-Medium";
+  src: url(./VictorMono-Medium.woff2);
+  font-display: swap;
+  font-weight: 600;
+}
+
 body {
   display: flex;
   min-height: 100vh;
   align-items: center;
   justify-content: center;
-  background-color: #d188d1;
+  font-family: "VictorMono-Medium";
+  background-color: #201c20;
+  gap: 2.5em;
+  color: aliceblue;
+  cursor: url(./cursor.cur), pointer;
 }
-
-/* #app {
-  display: grid;
-  grid-template-columns: repeat(16, 1rem);
-} */
 
 #app {
   display: flex;
   flex-wrap: wrap;
-  max-width: 20rem;
+  max-width: 30rem;
+  outline: 2px solid #c46cc4;
+  box-shadow: 5px 3px 5px powderblue;
 }
 
 .grid {
-  height: 20px;
-  width: 20px;
-  background-color: rgba(0, 0, 0, 0.553);
+  height: 30px;
+  width: 30px;
+  background-color: rgb(0, 0, 0);
   border: 1px solid white;
 }
 
-.pigs {
+/* .pigs {
   color: #d188d1;
   color: #cae22c;
   color: #324cd0;
@@ -40,4 +48,69 @@ body {
   color: #9cd188;
   color: #e116c9;
   color: #83ea2f;
+} */
+
+button {
+  height: 3rem;
+  width: 3rem;
+  border: none;
+  border-radius: 50%;
+  color: aliceblue;
+  font-weight: 900;
+  font-family: inherit;
+  cursor: url(./cursor.cur), pointer;
+}
+
+button:active {
+  box-shadow: inset 2px 2px 5px black;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+#option1 {
+  background-color: #cae22c;
+}
+
+#option2 {
+  background-color: #2ce2b1;
+}
+
+#option3 {
+  background-color: #e22c81;
+}
+
+.selections {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+#clear,
+#clear-sketch {
+  border-radius: 5px;
+  width: fit-content;
+  background-color: lavender;
+  color: #333;
+  padding: 0.5em;
+}
+
+a {
+  background-color: #e22c81;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  clip-path: polygon(20px, 30px);
+  text-decoration: none;
+  color: #201c20;
+}
+
+a:hover {
+  background-color: #c46cc4;
 }
