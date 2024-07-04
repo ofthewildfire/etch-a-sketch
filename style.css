@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #d188d1;
+}
+
+/* #app {
+  display: grid;
+  grid-template-columns: repeat(16, 1rem);
+} */
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 20rem;
+}
+
+.grid {
+  height: 20px;
+  width: 20px;
+  background-color: rgba(0, 0, 0, 0.553);
+  border: 1px solid white;
+}
