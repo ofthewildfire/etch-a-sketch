@@ -2,6 +2,8 @@
 
 Welcome to my version of the Etch-a-Sketch project from The Odin Project's curriculum. This is a fun and interactive drawing application that you can use right in your browser.
 
+Live Link: https://etch-a-sketch-kmdev.vercel.app/
+
 ## Features
 
 - **Cute Kawaii Cursor**: To make the drawing experience more enjoyable, I've implemented a custom cute kawaii cursor. This adds a unique and playful touch to the application.
